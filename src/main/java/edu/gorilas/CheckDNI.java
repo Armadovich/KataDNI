@@ -8,7 +8,7 @@ public class CheckDNI
 {
 
 
-    private String dniNumbers;
+    private final String dniNumbers;
     TablaAsignacionDNI tabla = new TablaAsignacionDNI();
 
     public CheckDNI(String dniNumbers) {
@@ -24,6 +24,17 @@ public class CheckDNI
         return Integer.parseInt(numbers)%23;
     }
 
+
+
+
+
+    @Override
+    public String toString() {
+        return "CheckDNI{" +
+                "dniNumbers='" + dniNumbers + '\'' +
+                ", tabla=" + tabla +
+                '}';
+    }
 
 
 

@@ -11,9 +11,16 @@ public class TablaAsignacionDNI {
                                    'H', 'L', 'C', 'K', 'E'
     };
 
-    char numberToLetter(int posicion){
-        return tabla[posicion];
+    public char numberToLetter(int posicion){
+        try {
+            return tabla[posicion];
+        }catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getMessage());
+            throw   new ArrayIndexOutOfBoundsException("Entero introducido fuera de los límites del diccionario de datos");
+        }
     }
+
+
 
 
 
