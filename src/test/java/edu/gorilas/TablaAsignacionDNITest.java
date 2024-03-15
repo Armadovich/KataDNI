@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TablaAsignacionDNITest {
 
-    private TablaAsignacionDNI tablaAsignacion = new TablaAsignacionDNI();
+    private final TablaAsignacionDNI tablaAsignacion = new TablaAsignacionDNI();
     @Test
     public void testLetraAsignada1(){
         assertEquals('X',tablaAsignacion.numberToLetter(10));
